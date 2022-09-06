@@ -2,21 +2,17 @@ import cv2
 import os
 import time
 
-#####################################################
 
-myPath = '' # Rasbperry Pi:  '/home/pi/Desktop/data/images'
+myPath = ''
 cameraNo = 1
 cameraBrightness = 180
-moduleVal = 10  # SAVE EVERY ITH FRAME TO AVOID REPETITION
-minBlur = 500  # SMALLER VALUE MEANS MORE BLURRINESS PRESENT
-grayImage = False # IMAGES SAVED COLORED OR GRAY
-saveData = True   # SAVE DATA FLAG
-showImage = True  # IMAGE DISPLAY FLAG
+moduleVal = 10
+minBlur = 500
+grayImage = False
+saveData = True
+showImage = True
 imgWidth = 180
 imgHeight = 120
-
-
-#####################################################
 
 global countFolder
 cap = cv2.VideoCapture(cameraNo)
